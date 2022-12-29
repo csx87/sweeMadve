@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SweeMadve</string>
+    <string name="bottom_menu_1">Home</string>
+    <string name="bottom_menu_2">Maps</string>
+    <string name="bottom_menu_3">Food</string>
+    <string name="bottom_menu_4">Dress</string>
+
+    <string name="upper_more_1">Photos</string>
+    <string name="upper_more_2">Option2</string>
+    <string name="upper_more_3">Option3</string>
 </resources>
