@@ -8,12 +8,16 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.example.sweemadve.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 import com.google.android.material.navigation.NavigationView
@@ -26,10 +30,16 @@ var stack = ArrayDeque<String>()
 
 lateinit var bottomNavigationView: NavigationBarView
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
+        val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        //binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
 
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
@@ -114,6 +124,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
 
+
         printStack()
         if(stack.size > 0){
             if(stack.size > 1) {
@@ -176,5 +187,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun showDatePickerDialog(v: View) {
+        val newFragment = DatePickerFragment()
+        newFragment.show(supportFragmentManager, "datePicker")
+    }
 }
 
