@@ -8,4 +8,21 @@
     <string name="upper_more_1">Photos</string>
     <string name="upper_more_2">Option2</string>
     <string name="upper_more_3">Option3</string>
+
+    <!-- For food page!-->
+    <string name="Breakfast_24">24_breakfast</string>
+    <string name="Breakfast_25">25_breakfast</string>
+    <string name="Breakfast_26">26_breakfast</string>
+
+    <string name="Lunch_24">24_lunch</string>
+    <string name="Lunch_25">25_lunch</string>
+    <string name="Lunch_26">26_lunch</string>
+
+    <string name="Snacks_24">24_snack</string>
+    <string name="Snacks_25">25_snack</string>
+    <string name="Snacks_26">26_snack</string>
+
+    <string name="Dinner_24">24_dinner</string>
+    <string name="Dinner_25">25_dinner</string>
+    <string name="Dinner_26">26_dinner</string>
 </resources>
