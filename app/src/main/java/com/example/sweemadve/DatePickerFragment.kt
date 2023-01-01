@@ -17,7 +17,6 @@ class DatePickerFragment: DialogFragment(), DatePickerDialog.OnDateSetListener{
 
 
         private var myDialog : DatePickerDialog?= null
-        val selectedDate = Calendar.getInstance()
 
         private fun intToMonth(int : Int):String?{
             return when(int){

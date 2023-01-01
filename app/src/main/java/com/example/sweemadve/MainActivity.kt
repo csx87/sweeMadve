@@ -6,22 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.Toast
-import androidx.activity.OnBackPressedCallback
-import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
+import android.widget.PopupWindow
+import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
-import com.google.android.material.navigation.NavigationView
 import java.util.ArrayDeque
-import kotlin.system.exitProcess
+
 
 //import androidx.fragment.app.Fragment
 
@@ -122,8 +116,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-
-
+        if(!supportFragmentManager.popBackStackImmediate())
+        {
         printStack()
         if(stack.size > 0){
             if(stack.size > 1) {
@@ -175,6 +169,7 @@ class MainActivity : AppCompatActivity() {
         //super.onBackPressed()
     }
 
+    }
     private fun manageStack(fragment : String) {
                 stack.remove(fragment)
                 stack.push(fragment)
@@ -190,5 +185,19 @@ class MainActivity : AppCompatActivity() {
         val newFragment = DatePickerFragment()
         newFragment.show(supportFragmentManager, "datePicker")
     }
+
+     fun exampleClick(v :View){
+         val bundle = bundleOf("id" to v.id)
+        supportFragmentManager.commit {
+            replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+            setReorderingAllowed(true)
+            addToBackStack("dress")
+        }
+         //handleCardText(v)
+    }
+
+
+
+
 }
 

@@ -25,4 +25,14 @@
     <string name="Dinner_24">24_dinner</string>
     <string name="Dinner_25">25_dinner</string>
     <string name="Dinner_26">26_dinner</string>
+
+    <!-- For Dress Page !-->
+    <string name="maayra">Maayra</string>
+    <string name="baaleShastra">Baale Shastra</string>
+    <string name="mehendi">Mehendi</string>
+    <string name="sangeet">Sangeet</string>
+    <string name="haldi">Haldi</string>
+    <string name="baarat">Baarat</string>
+    <string name="dhaare">Dhaare</string>
+    <string name="bollywoodNight">BollyWood Night</string>
 </resources>
