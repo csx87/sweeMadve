@@ -28,6 +28,7 @@ android {
         dataBinding = true
     }
 
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -52,6 +53,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation("androidx.fragment:fragment-ktx:1.5.5")
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation "androidx.browser:browser:1.4.0"
 
 }
+
+
+
 

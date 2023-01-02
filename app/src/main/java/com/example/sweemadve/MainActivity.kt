@@ -1,20 +1,21 @@
 package com.example.sweemadve
 
-import android.app.Activity
-import android.graphics.BitmapShader
-import androidx.appcompat.app.AppCompatActivity
+
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.View
-import android.widget.PopupWindow
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.browser.customtabs.CustomTabColorSchemeParams
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.os.bundleOf
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.github.chrisbanes.photoview.PhotoView
 import com.google.android.material.navigation.NavigationBarView
-import java.util.ArrayDeque
+import java.util.*
 
 
 //import androidx.fragment.app.Fragment
@@ -44,6 +45,8 @@ class MainActivity : AppCompatActivity() {
 
 
         bottomNavigationView = findViewById<NavigationBarView>(R.id.bottom_navigation)
+
+
 
 
 
@@ -196,7 +199,26 @@ class MainActivity : AppCompatActivity() {
          //handleCardText(v)
     }
 
+    fun customTab360(v: View){
+        val URI = "https://www.mirayagreens.com/360/"
+        val package_name = "com.android.chrome";
 
+        val builder = CustomTabsIntent.Builder()
+
+        val params = CustomTabColorSchemeParams.Builder()
+        //params.setToolbarColor(ContextCompat.getColor(this.root, R.color.colorPrimary))
+        //builder.setDefaultColorSchemeParams(params.build())
+        builder.setShowTitle(true)
+        builder.setInstantAppsEnabled(true)
+
+        val customBuilder = builder.build()
+
+        customBuilder.intent.setPackage(package_name)
+        customBuilder.launchUrl(this, Uri.parse(URI))
+
+
+
+    }
 
 
 }
