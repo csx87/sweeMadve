@@ -1,11 +1,89 @@
 <resources>
     <string name="app_name">SweeMadve</string>
-    <string name="bottom_menu_1">Home</string>
-    <string name="bottom_menu_2">Maps</string>
-    <string name="bottom_menu_3">Food</string>
-    <string name="bottom_menu_4">Dress</string>
+    <string name="home">Home</string>
+    <string name="events">Events</string>
+    <string name="maps">Maps</string>
+    <string name="food">Food</string>
+    <string name="dress">Dress</string>
 
     <string name="upper_more_1">Photos</string>
     <string name="upper_more_2">Option2</string>
     <string name="upper_more_3">Option3</string>
+
+    <!-- For food page!-->
+    <string name="Breakfast_24">24_breakfast</string>
+    <string name="Breakfast_25">25_breakfast</string>
+    <string name="Breakfast_26">26_breakfast</string>
+
+    <string name="Lunch_24">24_lunch</string>
+    <string name="Lunch_25">25_lunch</string>
+    <string name="Lunch_26">26_lunch</string>
+
+    <string name="Snacks_24">24_snack</string>
+    <string name="Snacks_25">25_snack</string>
+    <string name="Snacks_26">26_snack</string>
+
+    <string name="Dinner_24">24_dinner</string>
+    <string name="Dinner_25">25_dinner</string>
+    <string name="Dinner_26">26_dinner</string>
+
+    <!-- For Dress Page !-->
+    <string name="maayra">Maayra</string>
+    <string name="baaleShastra">Baale Shastra</string>
+    <string name="mehendi">Mehendi</string>
+    <string name="sangeet">Sangeet</string>
+    <string name="haldi">Haldi</string>
+    <string name="baarat">Baarat</string>
+    <string name="dhaare">Dhaare</string>
+    <string name="bollywoodNight">BollyWood Night</string>
+
+    <!-- ..............................................................................For Events Page..................................................................................... !-->
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 24 !-->
+    <!-- Lunch 24 -->
+    <string name="Lunch_24_Header">Lunch</string>
+    <string name="Lunch_24_Contents">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Lunch_24_timings">Timings: 12:30pm</string>
+    <string name="Lunch_24_venue">Venue: Pavilion Hall</string>
+    
+    <!-- Baale Shastra -->
+    <string name="Baale_Shastra_Header">Baale Shastra</string>
+    <string name="Baale_Shastra_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Baale_Shastra_Timings">Timings: 2pm</string>
+    <string name="Baale_Shastra_Venue">Venue: Fountain Area</string>
+
+    <!-- Maayra -->
+    <string name="Maayra_header">Maayra</string>
+    <string name="Maayra_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Maayra_timings">Timings: 3pm</string>
+    <string name="Maayra_venue">Venue: Pavilion Hall</string>
+    
+    <!-- Mehendi -->
+    <string name="Mehendi_header">Mehendi</string>
+    <string name="Mehendi_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Mehendi_timings">Timings: 2pm</string>
+    <string name="Mehendi_venue">Venue: Fountain Area</string>
+
+    <!-- Snacks !-->
+    <string name="Snacks_24_header">Snacks</string>
+    <string name="Snacks_24_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Snacks_24_timings">Timings: 5pm</string>
+    <string name="Snacks_24_venue">Venue: Pavilion Hall</string>
+
+    <!-- Sangeet !-->
+    <string name="Sangeet_header">Sangeet</string>
+    <string name="Sangeet_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Sangeet_timings">Timings: 6pm</string>
+    <string name="Sangeet_venue">Venue: Bamboo Lawns</string>
+
+    <!-- Dinner !-->
+    <string name="Dinner_24_header">Dinner</string>
+    <string name="Dinner_24_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789<a href="http://google.com">More..</a></string>
+    <string name="Dinner_24_timings">Timings: 8:30pm</string>
+    <string name="Dinner_24_venue">Venue: Bamboo Lawns</string>
+
+    <!-- Bollywood Party !-->
+    <string name="Bollywood_party_header">Bollywood Party</string>
+    <string name="Bollywood_party_content">123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789</string>
+    <string name="Bollywood_party_timings">Timings: 10pm</string>
+    <string name="Bollywood_party_venue">Venue: Bamboo Lawns</string>
 </resources>
