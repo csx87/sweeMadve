@@ -13,7 +13,6 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.github.chrisbanes.photoview.PhotoView
 import com.google.android.material.navigation.NavigationBarView
 import java.util.*
 
@@ -64,6 +63,21 @@ class MainActivity : AppCompatActivity() {
                     //supportFragmentManager.clearBackStack()
                     true
                 }
+
+                R.id.events -> {
+
+                    //Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show()
+                    supportFragmentManager.commit {
+                        replace<EventsFragment>(R.id.fragmentContainerView)
+                        setReorderingAllowed(true)
+                        //addToBackStack("home")
+                    }
+                    manageStack("E")
+                    //supportFragmentManager.clearBackStack()
+                    true
+                }
+
+
 
                 R.id.maps -> {
 
@@ -130,11 +144,14 @@ class MainActivity : AppCompatActivity() {
                     bottomNavigationView.selectedItemId = R.id.home
                 }
 
+                else if (fragment.equals("E")) {
+                    bottomNavigationView.selectedItemId = R.id.events
+                }
+
                 else if (fragment.equals("M")) {
                     bottomNavigationView.selectedItemId = R.id.maps
 
                 }
-
 
                 else if (fragment.equals("F")) {
                     bottomNavigationView.selectedItemId = R.id.food
@@ -144,6 +161,7 @@ class MainActivity : AppCompatActivity() {
                 else if (fragment.equals("D")) {
                     bottomNavigationView.selectedItemId = R.id.dress
                 }
+
             }
 
             else if(stack.size == 1){

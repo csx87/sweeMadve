@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Lunch 24 !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lunch24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lunch24Constraint">
+
+                <View
+                    android:id="@+id/lunch24ClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/lunch24Constraint"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Constraint"
+                    app:layout_constraintTop_toTopOf="@id/lunch24Constraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24Guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24Guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24MidGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24Guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24HeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24Guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+
+                <TextView
+                    android:id="@+id/lunch24CardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lunch_24_Header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/lunch24Guideline4"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintTop_toTopOf="@+id/lunch24HeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/lunch24Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lunch24CardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/lunch24Guideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/lunch24CardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/lunch24Guideline3"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/lunch24UpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/lunch24CardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Lunch_24_timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/lunch24UpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/lunch24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/lunch24CardHeader" />
+
+                <TextView
+                    android:id="@+id/lunch24Contents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Lunch_24_Contents"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/lunch24BottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/lunch24MidGuideline"
+                    app:layout_constraintStart_toStartOf="@id/lunch24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@id/lunch24UpperLine" />
+
+                <ImageView
+                    android:id="@+id/lunch24Image"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/lunch24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24MidGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/lunch24UpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/lunch24BottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/lunch24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/lunch24Image"/>
+
+                <TextView
+                    android:id="@+id/lunch24Timings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/lunch24BottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Lunch_24_timings"/>
+
+                <TextView
+                    android:id="@+id/lunch24DressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/lunch24Timings"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Menu : Click_Here"/>
+
+                <TextView
+                    android:id="@+id/lunch24Venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/lunch24DressCode"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/lunch24Constraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Lunch_24_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/lunch24CardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="lunch24BottomLine,lunch24Contents,lunch24DressCode,lunch24UpperLine,lunch24Timings,lunch24Image, lunch24Venue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Baale shastra !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/baale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/baaleConstraint">
+
+                <View
+                    android:id="@+id/baaleClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/baaleConstraint"
+                    app:layout_constraintStart_toStartOf="@+id/baaleConstraint"
+                    app:layout_constraintTop_toTopOf="@id/baaleConstraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleGuideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleGuideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleHeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleGuideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleGuideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+
+                <TextView
+                    android:id="@+id/baaleCardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Baale_Shastra_Header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/baaleGuideline4"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintTop_toTopOf="@+id/baaleHeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/baaleArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/baaleCardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/baaleCardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/baaleCardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/baaleUpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/baaleCardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Baale_Shastra_Timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/baaleUpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/baaleCardHeader" />
+
+                <TextView
+                    android:id="@+id/baaleContents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Baale_Shastra_content"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/baaleBottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline"
+                    app:layout_constraintStart_toStartOf="@id/baaleGuideline1"
+                    app:layout_constraintTop_toBottomOf="@id/baaleUpperLine" />
+
+                <ImageView
+                    android:id="@+id/baaleImage"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/baaleGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/baaleUpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/baaleBottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/baaleImage"/>
+
+                <TextView
+                    android:id="@+id/baaleTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/baaleBottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Baale_Shastra_Timings"/>
+
+                <TextView
+                    android:id="@+id/baaleDressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/baaleTimings"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click_Here"/>
+
+                <TextView
+                    android:id="@+id/baaleVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/baaleDressCode"
+                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/baaleConstraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Baale_Shastra_Venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/baaleCardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="baaleBottomLine,baaleContents,baaleDressCode,baaleUpperLine,baaleTimings,baaleImage, baaleVenue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Mehendi !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mehendi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mehendiConstraint">
+
+                <View
+                    android:id="@+id/mehendiClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/mehendiConstraint"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiConstraint"
+                    app:layout_constraintTop_toTopOf="@id/mehendiConstraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiGuideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiGuideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiGuideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiGuideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiHeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+
+                <TextView
+                    android:id="@+id/mehendiCardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Mehendi_header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/mehendiGuideline4"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    app:layout_constraintTop_toTopOf="@+id/mehendiHeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/mehendiArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mehendiCardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/mehendiGuideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/mehendiCardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/mehendiCardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/mehendiUpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/mehendiCardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Mehendi_timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/mehendiUpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/mehendiGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/mehendiCardHeader" />
+
+                <TextView
+                    android:id="@+id/mehendiContents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Mehendi_content"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mehendiBottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/mehendiGuideline"
+                    app:layout_constraintStart_toStartOf="@id/mehendiGuideline1"
+                    app:layout_constraintTop_toBottomOf="@id/mehendiUpperLine" />
+
+                <ImageView
+                    android:id="@+id/mehendiImage"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/mehendiGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/mehendiUpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/mehendiBottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/mehendiGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/mehendiImage"/>
+
+                <TextView
+                    android:id="@+id/mehendiTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/mehendiBottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Mehendi_timings"/>
+
+                <TextView
+                    android:id="@+id/mehendiDressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/mehendiTimings"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click Here"/>
+
+                <TextView
+                    android:id="@+id/mehendiVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/mehendiDressCode"
+                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/mehendiConstraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Mehendi_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/mehendiCardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="mehendiBottomLine,mehendiContents,mehendiDressCode,mehendiUpperLine,mehendiTimings,mehendiImage, mehendiVenue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- maayra !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/maayra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/maayraConstraint">
+
+                <View
+                    android:id="@+id/maayraClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/maayraConstraint"
+                    app:layout_constraintStart_toStartOf="@+id/maayraConstraint"
+                    app:layout_constraintTop_toTopOf="@id/maayraConstraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraGuideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraGuideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraGuideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraGuideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraHeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+
+                <TextView
+                    android:id="@+id/maayraCardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Maayra_header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/maayraGuideline4"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    app:layout_constraintTop_toTopOf="@+id/maayraHeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/maayraArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/maayraCardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/maayraGuideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/maayraCardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/maayraCardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/maayraUpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/maayraCardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Maayra_timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/maayraUpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/maayraGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/maayraCardHeader" />
+
+                <TextView
+                    android:id="@+id/maayraContents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Maayra_header"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/maayraBottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/maayraGuideline"
+                    app:layout_constraintStart_toStartOf="@id/maayraGuideline1"
+                    app:layout_constraintTop_toBottomOf="@id/maayraUpperLine" />
+
+                <ImageView
+                    android:id="@+id/maayraImage"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/maayraGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/maayraUpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/maayraBottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/maayraGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/maayraImage"/>
+
+                <TextView
+                    android:id="@+id/maayraTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/maayraBottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Mehendi_timings"/>
+
+                <TextView
+                    android:id="@+id/maayraDressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/maayraTimings"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click Here"/>
+
+                <TextView
+                    android:id="@+id/maayraVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/maayraDressCode"
+                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/maayraConstraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Mehendi_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/maayraCardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="maayraBottomLine,maayraContents,maayraDressCode,maayraUpperLine,maayraTimings,maayraImage, maayraVenue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- snacks24 !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/snacks24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/snacks24Constraint">
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24Guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <View
+                    android:id="@+id/snacks24ClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/snacks24Constraint"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Constraint"
+                    app:layout_constraintTop_toTopOf="@id/snacks24Constraint"/>
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24Guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24Guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24Guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24Guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24HeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+
+                <TextView
+                    android:id="@+id/snacks24CardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Snacks_24_header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/snacks24Guideline4"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    app:layout_constraintTop_toTopOf="@+id/snacks24HeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/snacks24Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/snacks24CardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/snacks24Guideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/snacks24CardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/snacks24CardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <View
+                    android:id="@+id/snacks24UpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/snacks24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/snacks24CardHeader" />
+
+                <TextView
+                    android:id="@+id/snacks24Contents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Snacks_24_content"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/snacks24BottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/snacks24Guideline"
+                    app:layout_constraintStart_toStartOf="@id/snacks24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@id/snacks24UpperLine" />
+
+                <ImageView
+                    android:id="@+id/snacks24Image"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/snacks24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline"
+                    app:layout_constraintTop_toBottomOf="@id/snacks24UpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <TextView
+                    android:id="@+id/snacks_24UpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/snacks24CardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Snacks_24_timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/snacks24BottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/snacks24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/snacks24Image"/>
+
+                <TextView
+                    android:id="@+id/snacks24Timings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/snacks24BottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Snacks_24_timings"/>
+
+                <TextView
+                    android:id="@+id/snacks24DressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/snacks24Timings"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click_Here"/>
+
+                <TextView
+                    android:id="@+id/snacks24Venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/snacks24DressCode"
+                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/snacks24Constraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Snacks_24_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/snacks24CardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="snacks24BottomLine,snacks24Contents,snacks24DressCode,snacks24UpperLine,snacks24Timings,snacks24Image, snacks24Venue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- sangeet !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sangeet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sangeetConstraint">
+
+                <View
+                    android:id="@+id/sangeetClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/sangeetConstraint"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetConstraint"
+                    app:layout_constraintTop_toTopOf="@id/sangeetConstraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetGuideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetGuideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetGuideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetGuideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetHeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+
+                <TextView
+                    android:id="@+id/sangeetCardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Sangeet_header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/sangeetGuideline4"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    app:layout_constraintTop_toTopOf="@+id/sangeetHeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/sangeetArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/sangeetCardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/sangeetGuideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/sangeetCardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/sangeetCardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/sangeetUpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/sangeetCardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Sangeet_timings"
+                    android:textColor="#838383"/>
+
+
+
+
+
+                <View
+                    android:id="@+id/sangeetUpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/sangeetGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/sangeetCardHeader" />
+
+                <TextView
+                    android:id="@+id/sangeetContents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Sangeet_content"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/sangeetBottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/sangeetGuideline"
+                    app:layout_constraintStart_toStartOf="@id/sangeetGuideline1"
+                    app:layout_constraintTop_toBottomOf="@id/sangeetUpperLine" />
+
+                <ImageView
+                    android:id="@+id/sangeetImage"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/sangeetGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/sangeetUpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/sangeetBottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/sangeetGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/sangeetImage"/>
+
+                <TextView
+                    android:id="@+id/sangeetTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/sangeetBottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Sangeet_timings"/>
+
+                <TextView
+                    android:id="@+id/sangeetDressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/sangeetTimings"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click_Here"/>
+
+                <TextView
+                    android:id="@+id/sangeetVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/sangeetDressCode"
+                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/sangeetConstraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Sangeet_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/sangeetCardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="sangeetBottomLine,sangeetContents,sangeetDressCode,sangeetUpperLine,sangeetTimings,sangeetImage, sangeetVenue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- dinner24  !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dinner24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dinner24Constraint">
+
+                <View
+                    android:id="@+id/dinner24ClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/dinner24Constraint"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Constraint"
+                    app:layout_constraintTop_toTopOf="@id/dinner24Constraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24Guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24Guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24Guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24Guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24Guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24HeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+
+                <TextView
+                    android:id="@+id/dinner24CardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Dinner_24_header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/dinner24Guideline4"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    app:layout_constraintTop_toTopOf="@+id/dinner24HeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/dinner24Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/dinner24CardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/dinner24Guideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/dinner24CardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/dinner24CardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/dinner24UpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/dinner24CardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Dinner_24_timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/dinner24UpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/dinner24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/dinner24CardHeader" />
+
+                <TextView
+                    android:id="@+id/dinner24Contents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Dinner_24_content"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/dinner24BottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/dinner24Guideline"
+                    app:layout_constraintStart_toStartOf="@id/dinner24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@id/dinner24UpperLine" />
+
+                <ImageView
+                    android:id="@+id/dinner24Image"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/dinner24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline"
+                    app:layout_constraintTop_toBottomOf="@id/dinner24UpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/dinner24BottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/dinner24Guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/dinner24Image"/>
+
+                <TextView
+                    android:id="@+id/dinner24Timings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/dinner24BottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Dinner_24_timings"/>
+
+                <TextView
+                    android:id="@+id/dinner24DressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/dinner24Timings"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click_Here"/>
+
+                <TextView
+                    android:id="@+id/dinner24Venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/dinner24DressCode"
+                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/dinner24Constraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Dinner_24_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/dinner24CardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="dinner24BottomLine,dinner24Contents,dinner24DressCode,dinner24UpperLine,dinner24Timings,dinner24Image, dinner24Venue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bollywood Party  !-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bollywoodParty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bollywoodPartyConstraint">
+
+                <View
+                    android:id="@+id/bollywoodPartyClickView"
+                    android:layout_width="368dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintEnd_toEndOf="@id/bollywoodPartyConstraint"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyConstraint"
+                    app:layout_constraintTop_toTopOf="@id/bollywoodPartyConstraint"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyGuideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyGuideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="255dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyGuideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyGuideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyHeaderGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="8dp" />
+
+
+                <TextView
+                    android:id="@+id/bollywoodPartyCardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Bollywood_party_header"
+                    android:textColor="#00255E"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/bollywoodPartyGuideline4"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    app:layout_constraintTop_toTopOf="@+id/bollywoodPartyHeaderGuideline"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/bollywoodPartyArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bollywoodPartyCardHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/bollywoodPartyGuideline2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/bollywoodPartyCardHeader"
+                    app:layout_constraintTop_toTopOf="@+id/bollywoodPartyCardHeader"
+                    app:srcCompat="@android:drawable/arrow_down_float"
+                    app:tint="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/bollywoodPartyUpperTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/bollywoodPartyCardHeader"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    android:textSize="9sp"
+                    android:text="@string/Bollywood_party_timings"
+                    android:textColor="#838383"/>
+
+                <View
+                    android:id="@+id/bollywoodPartyUpperLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/bollywoodPartyGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/bollywoodPartyCardHeader" />
+
+                <TextView
+                    android:id="@+id/bollywoodPartyContents"
+                    android:layout_width="238dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Bollywood_party_content"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/bollywoodPartyBottomLine"
+                    app:layout_constraintEnd_toStartOf="@+id/bollywoodPartyGuideline"
+                    app:layout_constraintStart_toStartOf="@id/bollywoodPartyGuideline1"
+                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyUpperLine" />
+
+                <ImageView
+                    android:id="@+id/bollywoodPartyImage"
+                    android:layout_width="99dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintEnd_toStartOf="@id/bollywoodPartyGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyUpperLine"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/lunch"
+                    />
+
+                <View
+                    android:id="@+id/bollywoodPartyBottomLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#CECECE"
+                    app:layout_constraintEnd_toStartOf="@+id/bollywoodPartyGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/bollywoodPartyImage"/>
+
+                <TextView
+                    android:id="@+id/bollywoodPartyTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyBottomLine"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Bollywood_party_timings"/>
+
+                <TextView
+                    android:id="@+id/bollywoodPartyDressCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyTimings"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="Dress code : Click_Here"/>
+
+                <TextView
+                    android:id="@+id/bollywoodPartyVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyDressCode"
+                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/bollywoodPartyConstraint"
+                    android:gravity="center"
+                    android:textColor="#838383"
+                    android:textSize="12sp"
+                    android:text="@string/Bollywood_party_venue"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/bollywoodPartyCardGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="bollywoodPartyBottomLine,bollywoodPartyContents,bollywoodPartyDressCode,bollywoodPartyUpperLine,bollywoodPartyTimings,bollywoodPartyImage, bollywoodPartyVenue"
+                    android:visibility="gone"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
