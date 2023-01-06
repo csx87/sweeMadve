@@ -9,7 +9,8 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:layout_width="match_parent"
-        android:layout_height="770dp"
+        android:layout_height="0dp"
+        android:layout_weight="11"
         tools:layout="@layout/home_fragment" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
