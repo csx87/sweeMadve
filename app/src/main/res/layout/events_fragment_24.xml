@@ -101,7 +101,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/lunch24Guideline2"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toEndOf="@+id/lunch24CardHeader"
-                    app:layout_constraintTop_toTopOf="@+id/lunch24Guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/lunch24UpperTimings"
                     app:srcCompat="@android:drawable/arrow_down_float"
                     app:tint="@color/teal_200" />
 
@@ -111,9 +111,21 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/lunch24CardHeader"
                     app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Lunch_24_timings"
                     android:textColor="#838383"/>
+
+                <TextView
+                    android:id="@+id/lunch24UpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/lunch24UpperTimings"
+                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@id/lunch24Constraint"
+                    android:textSize="12sp"
+                    android:text="@string/Lunch_24_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="16dp"/>
 
                 <View
                     android:id="@+id/lunch24UpperLine"
@@ -171,7 +183,7 @@
                     app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Lunch_24_timings"/>
 
                 <TextView
@@ -182,7 +194,7 @@
                     app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Menu_Click_Here" />
 
                 <TextView
@@ -194,7 +206,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/lunch24Constraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Lunch_24_venue"
                     android:layout_marginBottom="16dp"
                     android:onClick="venueClickEvent"/>
@@ -204,7 +216,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:constraint_referenced_ids="lunch24BottomLine,lunch24Contents,lunch24DressCode,lunch24UpperLine,lunch24Timings,lunch24Image, lunch24Venue"
-                    android:visibility="gone"/>
+                    android:visibility="visible"/>
 
 
 
