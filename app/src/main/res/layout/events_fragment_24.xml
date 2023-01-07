@@ -743,7 +743,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
-                    android:text="@string/Maayra_header"
+                    android:text="@string/Maayra_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@id/maayraBottomLine"
