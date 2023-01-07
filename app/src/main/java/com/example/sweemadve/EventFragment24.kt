@@ -1,6 +1,7 @@
 package com.example.sweemadve
 
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import android.transition.AutoTransition
 import android.transition.TransitionManager
 import android.view.LayoutInflater
@@ -23,6 +24,17 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
     ): View? {
         binding = EventsFragment24Binding.inflate(layoutInflater)
         handleCardClick(binding!!)
+
+        //Make article linkable
+        binding!!.lunch24Contents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.baaleContents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.mehendiContents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.maayraContents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.snacks24Contents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.sangeetContents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.dinner24Contents.movementMethod = LinkMovementMethod.getInstance()
+        binding!!.bollywoodPartyContents.movementMethod = LinkMovementMethod.getInstance()
+
         return binding!!.root
     }
 
