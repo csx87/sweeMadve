@@ -238,9 +238,55 @@ class MainActivity : AppCompatActivity() {
 
 
     }
- fun eventsDateClick(v: View){
 
+    //event_page_dress_code_redirection
+ fun dressCodeClickEvent(v: View){
+     when(v.id){
+         R.id.baaleDressCode -> {
+             val bundle = bundleOf("id" to R.id.baaleShastra)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
 
+         R.id.maayraDressCode -> {
+             val bundle = bundleOf("id" to R.id.maayra)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
+         R.id.mehendiDressCode -> {
+             val bundle = bundleOf("id" to R.id.mehendi)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
+         R.id.sangeetDressCode -> {
+             val bundle = bundleOf("id" to R.id.sangeet)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
+         R.id.bollywoodPartyDressCode -> {
+             val bundle = bundleOf("id" to R.id.bollywoodParty)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+     }
  }
 
 
