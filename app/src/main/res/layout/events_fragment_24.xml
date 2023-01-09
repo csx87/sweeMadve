@@ -50,6 +50,14 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_end="16dp" />
 
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/lunch24VenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
+
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/lunch24MidGuideline"
                     android:layout_width="wrap_content"
@@ -86,6 +94,7 @@
                     android:text="@string/Lunch_24_Header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/lunch24Guideline4"
                     app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
                     app:layout_constraintTop_toTopOf="@+id/lunch24HeaderGuideline"
@@ -101,9 +110,9 @@
                     app:layout_constraintEnd_toStartOf="@+id/lunch24Guideline2"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toEndOf="@+id/lunch24CardHeader"
-                    app:layout_constraintTop_toBottomOf="@+id/lunch24UpperTimings"
+                    app:layout_constraintTop_toTopOf="@+id/lunch24CardHeader"
                     app:srcCompat="@android:drawable/arrow_down_float"
-                    app:tint="@color/teal_200" />
+                    app:tint="@color/teal_200"/>
 
                 <TextView
                     android:id="@+id/lunch24UpperTimings"
@@ -119,13 +128,15 @@
                     android:id="@+id/lunch24UpperVenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/lunch24UpperTimings"
-                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/lunch24CardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/lunch24VenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/lunch24Constraint"
                     android:textSize="12sp"
                     android:text="@string/Lunch_24_venue"
                     android:textColor="#838383"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="8dp"
+
+                    />
 
                 <View
                     android:id="@+id/lunch24UpperLine"
@@ -192,23 +203,24 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/lunch24Timings"
                     app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/lunch24Constraint"
                     android:gravity="center"
                     android:textColor="#838383"
                     android:textSize="14sp"
-                    android:text="@string/Menu_Click_Here" />
+                    android:text="@string/Menu_Click_Here"
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/lunch24Venue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/lunch24DressCode"
-                    app:layout_constraintStart_toStartOf="@+id/lunch24Guideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/lunch24Constraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/lunch24BottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/lunch24Guideline2"
                     android:gravity="center"
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Lunch_24_venue"
-                    android:layout_marginBottom="16dp"
                     android:onClick="venueClickEvent"/>
 
                 <androidx.constraintlayout.widget.Group
@@ -216,7 +228,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:constraint_referenced_ids="lunch24BottomLine,lunch24Contents,lunch24DressCode,lunch24UpperLine,lunch24Timings,lunch24Image, lunch24Venue"
-                    android:visibility="visible"/>
+                    android:visibility="gone"/>
 
 
 
@@ -254,21 +266,28 @@
                     app:layout_constraintTop_toTopOf="@id/baaleConstraint"/>
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/baaleGuideline1"
+                    android:id="@+id/baaleVenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/baaleMidGuideline1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="16dp" />
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/baaleGuideline2"
+                    android:id="@+id/baaleMidGuideline2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_end="16dp" />
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/baaleGuideline"
+                    android:id="@+id/baaleMidGuideline"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -282,14 +301,14 @@
                     app:layout_constraintGuide_begin="8dp" />
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/baaleGuideline3"
+                    android:id="@+id/baaleMidGuideline3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="16dp" />
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/baaleGuideline4"
+                    android:id="@+id/baaleMidGuideline4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -300,12 +319,12 @@
                     android:id="@+id/baaleCardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Baale_Shastra_Header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toTopOf="@+id/baaleGuideline4"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintBottom_toTopOf="@+id/baaleMidGuideline4"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline1"
                     app:layout_constraintTop_toTopOf="@+id/baaleHeaderGuideline"
                     app:layout_constraintVertical_bias="0.0" />
 
@@ -316,7 +335,7 @@
                     android:layout_marginEnd="4dp"
                     android:padding="4dp"
                     app:layout_constraintBottom_toBottomOf="@+id/baaleCardHeader"
-                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline2"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleMidGuideline2"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toEndOf="@+id/baaleCardHeader"
                     app:layout_constraintTop_toTopOf="@+id/baaleCardHeader"
@@ -328,10 +347,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/baaleCardHeader"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
-                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline1"
+                    android:textSize="12sp"
                     android:text="@string/Baale_Shastra_Timings"
                     android:textColor="#838383"/>
+
+                <TextView
+                    android:id="@+id/baaleUpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/baaleCardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/baaleVenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/baaleConstraint"
+                    android:textSize="12sp"
+                    android:text="@string/Baale_Shastra_Venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp" />
 
                 <View
                     android:id="@+id/baaleUpperLine"
@@ -339,8 +370,8 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="16dp"
                     android:background="#CECECE"
-                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline2"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleMidGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline1"
                     app:layout_constraintTop_toBottomOf="@+id/baaleCardHeader" />
 
                 <TextView
@@ -348,20 +379,21 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Baale_Shastra_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@id/baaleBottomLine"
-                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline"
-                    app:layout_constraintStart_toStartOf="@id/baaleGuideline1"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleMidGuideline"
+                    app:layout_constraintStart_toStartOf="@id/baaleMidGuideline1"
                     app:layout_constraintTop_toBottomOf="@id/baaleUpperLine" />
 
                 <ImageView
                     android:id="@+id/baaleImage"
                     android:layout_width="99dp"
                     android:layout_height="93dp"
-                    app:layout_constraintEnd_toStartOf="@id/baaleGuideline2"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline"
+                    app:layout_constraintEnd_toStartOf="@id/baaleMidGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline"
                     app:layout_constraintTop_toBottomOf="@id/baaleUpperLine"
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="5dp"
@@ -375,8 +407,8 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="16dp"
                     android:background="#CECECE"
-                    app:layout_constraintEnd_toStartOf="@+id/baaleGuideline2"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintEnd_toStartOf="@+id/baaleMidGuideline2"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline1"
                     app:layout_constraintTop_toBottomOf="@+id/baaleImage"/>
 
                 <TextView
@@ -385,10 +417,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     app:layout_constraintTop_toBottomOf="@id/baaleBottomLine"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Baale_Shastra_Timings"/>
 
                 <TextView
@@ -396,25 +428,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/baaleTimings"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
+                    app:layout_constraintStart_toStartOf="@+id/baaleMidGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/baaleConstraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/baaleVenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/baaleDressCode"
-                    app:layout_constraintStart_toStartOf="@+id/baaleGuideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/baaleConstraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/baaleBottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/baaleMidGuideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Baale_Shastra_Venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
 
                 <androidx.constraintlayout.widget.Group
@@ -501,12 +533,18 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="8dp" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/mehendiVenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
 
                 <TextView
                     android:id="@+id/mehendiCardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Mehendi_header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
@@ -535,9 +573,22 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/mehendiCardHeader"
                     app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Mehendi_timings"
                     android:textColor="#838383"/>
+
+                <TextView
+                    android:id="@+id/mehendiUpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/mehendiCardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/mehendiVenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/mehendiConstraint"
+                    android:textSize="12sp"
+                    android:text="@string/Lunch_24_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp"
+                    />
 
                 <View
                     android:id="@+id/mehendiUpperLine"
@@ -554,6 +605,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Mehendi_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
@@ -594,7 +646,7 @@
                     app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Mehendi_timings"/>
 
                 <TextView
@@ -603,25 +655,26 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/mehendiTimings"
                     app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/mehendiConstraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/mehendiVenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/mehendiDressCode"
-                    app:layout_constraintStart_toStartOf="@+id/mehendiGuideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/mehendiConstraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/mehendiBottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/mehendiGuideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Mehendi_venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
+
 
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/mehendiCardGroup"
@@ -707,12 +760,19 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="8dp" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/maayraVenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
+
 
                 <TextView
                     android:id="@+id/maayraCardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Maayra_header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
@@ -741,9 +801,21 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/maayraCardHeader"
                     app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Maayra_timings"
                     android:textColor="#838383"/>
+
+                <TextView
+                    android:id="@+id/maayraUpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/maayraCardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/maayraVenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/maayraConstraint"
+                    android:textSize="12sp"
+                    android:text="@string/Maayra_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp" />
 
                 <View
                     android:id="@+id/maayraUpperLine"
@@ -760,6 +832,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Maayra_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
@@ -800,7 +873,7 @@
                     app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Mehendi_timings"/>
 
                 <TextView
@@ -809,25 +882,26 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/maayraTimings"
                     app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/maayraConstraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/maayraVenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/maayraDressCode"
-                    app:layout_constraintStart_toStartOf="@+id/maayraGuideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/maayraConstraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/maayraBottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/maayraGuideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Mehendi_venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
+
 
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/maayraCardGroup"
@@ -913,12 +987,19 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="8dp" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/snacks24VenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
+
 
                 <TextView
                     android:id="@+id/snacks24CardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Snacks_24_header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
@@ -941,6 +1022,7 @@
                     app:srcCompat="@android:drawable/arrow_down_float"
                     app:tint="@color/teal_200" />
 
+
                 <View
                     android:id="@+id/snacks24UpperLine"
                     android:layout_width="0dp"
@@ -956,6 +1038,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Snacks_24_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
@@ -963,6 +1046,18 @@
                     app:layout_constraintEnd_toStartOf="@+id/snacks24Guideline"
                     app:layout_constraintStart_toStartOf="@id/snacks24Guideline1"
                     app:layout_constraintTop_toBottomOf="@id/snacks24UpperLine" />
+
+                <TextView
+                    android:id="@+id/snacks24UpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/snacks24CardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/snacks24VenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/snacks24Constraint"
+                    android:textSize="12sp"
+                    android:text="@string/Snacks_24_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp" />
 
                 <ImageView
                     android:id="@+id/snacks24Image"
@@ -983,7 +1078,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/snacks24CardHeader"
                     app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Snacks_24_timings"
                     android:textColor="#838383"/>
 
@@ -1006,7 +1101,7 @@
                     app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Snacks_24_timings"/>
 
                 <TextView
@@ -1015,25 +1110,26 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/snacks24Timings"
                     app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/snacks24Constraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:textSize="14sp"
+                    android:text="@string/Menu_Click_Here"
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/snacks24Venue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/snacks24DressCode"
-                    app:layout_constraintStart_toStartOf="@+id/snacks24Guideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/snacks24Constraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/snacks24BottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/snacks24Guideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Snacks_24_venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
+
 
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/snacks24CardGroup"
@@ -1119,12 +1215,19 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="8dp" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sangeetVenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
+
 
                 <TextView
                     android:id="@+id/sangeetCardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Sangeet_header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
@@ -1153,13 +1256,21 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/sangeetCardHeader"
                     app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Sangeet_timings"
                     android:textColor="#838383"/>
 
-
-
-
+                <TextView
+                    android:id="@+id/sangeetUpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/sangeetCardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/sangeetVenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/sangeetConstraint"
+                    android:textSize="12sp"
+                    android:text="@string/Sangeet_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp" />
 
                 <View
                     android:id="@+id/sangeetUpperLine"
@@ -1176,6 +1287,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Sangeet_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
@@ -1216,7 +1328,7 @@
                     app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Sangeet_timings"/>
 
                 <TextView
@@ -1225,25 +1337,26 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/sangeetTimings"
                     app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/sangeetConstraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/sangeetVenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/sangeetDressCode"
-                    app:layout_constraintStart_toStartOf="@+id/sangeetGuideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/sangeetConstraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/sangeetBottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/sangeetGuideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Sangeet_venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
+
 
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/sangeetCardGroup"
@@ -1329,12 +1442,19 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="8dp" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/dinner24VenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
+
 
                 <TextView
                     android:id="@+id/dinner24CardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Dinner_24_header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
@@ -1363,9 +1483,22 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/dinner24CardHeader"
                     app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Dinner_24_timings"
                     android:textColor="#838383"/>
+
+                <TextView
+                    android:id="@+id/dinner24UpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/dinner24CardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/dinner24VenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/dinner24Constraint"
+                    android:textSize="12sp"
+                    android:text="@string/Dinner_24_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp"
+                    />
 
                 <View
                     android:id="@+id/dinner24UpperLine"
@@ -1382,6 +1515,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Dinner_24_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
@@ -1422,7 +1556,7 @@
                     app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Dinner_24_timings"/>
 
                 <TextView
@@ -1431,25 +1565,26 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/dinner24Timings"
                     app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/dinner24Constraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:textSize="14sp"
+                    android:text="@string/Menu_Click_Here"
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/dinner24Venue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/dinner24DressCode"
-                    app:layout_constraintStart_toStartOf="@+id/dinner24Guideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/dinner24Constraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/dinner24BottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/dinner24Guideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Dinner_24_venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
+
 
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/dinner24CardGroup"
@@ -1536,12 +1671,18 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="8dp" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bollywoodPartyVenueGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="145dp" />
 
                 <TextView
                     android:id="@+id/bollywoodPartyCardHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textStyle="bold"
                     android:text="@string/Bollywood_party_header"
                     android:textColor="#00255E"
                     android:textSize="14sp"
@@ -1570,9 +1711,22 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/bollywoodPartyCardHeader"
                     app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
-                    android:textSize="9sp"
+                    android:textSize="12sp"
                     android:text="@string/Bollywood_party_timings"
                     android:textColor="#838383"/>
+
+                <TextView
+                    android:id="@+id/bollywoodPartyUpperVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/bollywoodPartyCardHeader"
+                    app:layout_constraintStart_toEndOf="@+id/bollywoodPartyVenueGuideline"
+                    app:layout_constraintBottom_toBottomOf="@id/bollywoodPartyConstraint"
+                    android:textSize="12sp"
+                    android:text="@string/Bollywood_party_venue"
+                    android:textColor="#838383"
+                    android:layout_marginBottom="8dp"
+                    />
 
                 <View
                     android:id="@+id/bollywoodPartyUpperLine"
@@ -1589,6 +1743,7 @@
                     android:layout_width="238dp"
                     android:layout_height="118dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="@string/Bollywood_party_content"
                     android:textColor="#838383"
                     android:textSize="12sp"
@@ -1629,7 +1784,7 @@
                     app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Bollywood_party_timings"/>
 
                 <TextView
@@ -1638,25 +1793,26 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/bollywoodPartyTimings"
                     app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
+                    app:layout_constraintBottom_toBottomOf="@+id/bollywoodPartyConstraint"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
-                    android:onClick="dressCodeClickEvent"/>
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:id="@+id/bollywoodPartyVenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyDressCode"
-                    app:layout_constraintStart_toStartOf="@+id/bollywoodPartyGuideline1"
-                    app:layout_constraintBottom_toBottomOf="@id/bollywoodPartyConstraint"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/bollywoodPartyBottomLine"
+                    app:layout_constraintEnd_toEndOf="@+id/bollywoodPartyGuideline2"
                     android:gravity="center"
                     android:textColor="#838383"
-                    android:textSize="12sp"
-                    android:text="@string/Bollywood_party_venue"
-                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="@string/Lunch_24_venue"
                     android:onClick="venueClickEvent"/>
+
 
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/bollywoodPartyCardGroup"
@@ -1674,11 +1830,6 @@
 
 
         </androidx.cardview.widget.CardView>
-
-
-
-
-
 
 
     </LinearLayout>

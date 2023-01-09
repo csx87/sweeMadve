@@ -45,6 +45,7 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         var arrow: ImageView?=null
         var headerView: View? = null
         var textView: TextView? = null
+        var textView2: TextView? = null
 
         //lunch 24
         cardView = binding.lunch24
@@ -52,7 +53,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.lunch24CardGroup
         arrow = binding.lunch24Arrow
         textView=binding.lunch24UpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2 = binding.lunch24UpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //baale
         cardView = binding.baale
@@ -60,7 +62,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.baaleCardGroup
         arrow = binding.baaleArrow
         textView=binding.baaleUpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2 = binding.baaleUpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //mehendi
         cardView = binding.mehendi
@@ -68,7 +71,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.mehendiCardGroup
         arrow = binding.mehendiArrow
         textView=binding.mehendiUpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2 = binding.mehendiUpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //maayra
         cardView = binding.maayra
@@ -76,7 +80,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup=binding.maayraCardGroup
         arrow=binding.maayraArrow
         textView=binding.maayraUpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2=binding.maayraUpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //snacks 24
         cardView = binding.snacks24
@@ -84,7 +89,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.snacks24CardGroup
         arrow=binding.snacks24Arrow
         textView=binding.snacks24UpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2=binding.snacks24UpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //sangeet
         cardView = binding.sangeet
@@ -92,7 +98,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.sangeetCardGroup
         arrow=binding.sangeetArrow
         textView=binding.sangeetUpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2=binding.sangeetUpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //dinner
         cardView = binding.dinner24
@@ -100,7 +107,8 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.dinner24CardGroup
         arrow=binding.dinner24Arrow
         textView=binding.dinner24UpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2=binding.dinner24UpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
         //Bollywood Party
         cardView = binding.bollywoodParty
@@ -108,23 +116,31 @@ class EventFragment24:Fragment(R.layout.events_fragment_24) {
         hiddenGroup = binding.bollywoodPartyCardGroup
         arrow=binding.bollywoodPartyArrow
         textView=binding.bollywoodPartyUpperTimings
-        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView)
+        textView2=binding.bollywoodPartyUpperVenue
+        handleClickListener(cardView,headerView,hiddenGroup,arrow,textView,textView2)
 
 
     }
 
-    private fun handleClickListener(cardView: CardView, clickView : View, hiddenGroup: Group, arrow: ImageView, textView: TextView){
+    private fun handleClickListener(cardView: CardView, clickView : View, hiddenGroup: Group, arrow: ImageView, textView: TextView, textView2: TextView){
         clickView.setOnClickListener{
             if(hiddenGroup.visibility == View.VISIBLE){
                 hiddenGroup.visibility = View.GONE;
                 //TransitionManager.beginDelayedTransition(cardView, AutoTransition());
                 textView.alpha = 0.0f;
                 textView.visibility = View.VISIBLE;
+                textView2.alpha = 0.0f;
+                textView2.visibility = View.VISIBLE;
+
+                textView2.animate().setDuration(200).alpha(1F).setInterpolator(AccelerateInterpolator()).start()
                 textView.animate().setDuration(200).alpha(1F).setInterpolator(AccelerateInterpolator()).start()
+
                 arrow.setImageResource(android.R.drawable.arrow_down_float)
             }
             else {
-                textView.visibility = TextView.GONE
+                textView.visibility = View.GONE;
+                textView2.visibility = View.GONE;
+
                 TransitionManager.beginDelayedTransition(cardView, AutoTransition());
                 hiddenGroup.visibility = View.VISIBLE;
                 arrow.setImageResource(android.R.drawable.arrow_up_float);
