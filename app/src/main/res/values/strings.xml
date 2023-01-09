@@ -47,47 +47,55 @@
     <string name="Lunch_24_Header">LUNCH</string>
     <string name="Lunch_24_Contents">"Come eat"</string>
     <string name="Lunch_24_timings">Timings: 12:30 PM</string>
-    <string name="Lunch_24_venue">Venue: Pavilion Hall</string>
+    <string name="Lunch_24_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Lunch_24_venue">Venue: <a href="">Pavilion Hall</a></string>
     
     <!-- Baale Shastra -->
     <string name="Baale_Shastra_Header">BALE SHASTRA</string>
     <string name="Baale_Shastra_content">"Bale in Kannada means bangles. This is a pre-wedding ritual when the bride goes for a puja to seek almighty's blessing at the mandir and then there is a bangle ceremony held where the bride gives bangles to the closest married women in her family.</string>
     <string name="Baale_Shastra_Timings">Timings: 2:00 PM</string>
-    <string name="Baale_Shastra_Venue">Venue: Fountain Area</string>
+    <string name="Baale_Shastra_Upper_Venue">Venue: Fountain Area</string>
+    <string name="Baale_Shastra_Venue">Venue: <a href="">Fountain Area</a></string>
 
     <!-- Maayra -->
     <string name="Maayra_header">MAAYRA</string>
     <string name="Maayra_content">"Referred to as the Maternal Uncle’s Ceremony, the Mayra is when the maternal uncle brings gifts for the mother of the bride and the groom. Among these gifts are the mothers’ dresses for the wedding.</string>
     <string name="Maayra_timings">Timings: 3:00 PM</string>
-    <string name="Maayra_venue">Venue: Pavilion Hall</string>
+    <string name="Maayra_Upper_Venue">Venue: Pavilion Hall </string>
+    <string name="Maayra_venue">Venue: <a href="">Pavilion Hall</a></string>
     
     <!-- Mehendi -->
     <string name="Mehendi_header">MEHENDI</string>
     <string name="Mehendi_content">"There is no better way to elaborate the significance of these delicate henna designs which blossom on the palms and feet of a bride-to-be. A traditional aspect of the ancient Solah Shringaar, the Mehndi is an inalienable part of an Indian bride's wedding look.</string>
     <string name="Mehendi_timings">Timings: 2:00 PM</string>
-    <string name="Mehendi_venue">Venue: Fountain Area</string>
+    <string name="Mehendi_Upper_Venue">Venue: Fountain Area </string>
+    <string name="Mehendi_venue">Venue: <a href="">Fountain Area</a></string>
 
     <!-- Snacks !-->
     <string name="Snacks_24_header">SNACKS</string>
     <string name="Snacks_24_content">Yum</string>
     <string name="Snacks_24_timings">Timings: 5:00 PM</string>
-    <string name="Snacks_24_venue">Venue: Pavilion Hall</string>
+    <string name="Snacks24_Upper_Venue">Venue: Pavilion Hall </string>
+    <string name="Snacks_24_venue">Venue: <a href="">Pavilion Hall</a></string>
 
     <!-- Sangeet        !-->
     <string name="Sangeet_header">SANGEET</string>
     <string name="Sangeet_content">"The word “Sangeet“ means  music, but when it is used as a term to describe a celebratory event during an Indian wedding it translates to Music Night or Musical party. This musical night is a celebration of the union of not only the couple but the bonding of both families.</string>
     <string name="Sangeet_timings">Timings: 6:00 PM</string>
-    <string name="Sangeet_venue">Venue: Bamboo Lawns</string>
+    <string name="Sangeet_Upper_Venue">Venue: Bamboo Lawns </string>
+    <string name="Sangeet_venue">Venue: <a href="">Bamboo Lawns</a></string>
 
     <!-- Dinner !-->
     <string name="Dinner_24_header">DINNER</string>
     <string name="Dinner_24_content">Dinner time!</string>
     <string name="Dinner_24_timings">Timings: 8:30 PM</string>
-    <string name="Dinner_24_venue">Venue: Bamboo Lawns</string>
+    <string name="Dinner24_Upper_Venue">Venue: Bamboo Lawns </string>
+    <string name="Dinner_24_venue">Venue: <a href="">Bamboo Lawns</a></string>
 
     <!-- Bollywood Party !-->
     <string name="Bollywood_party_header">BOLLYWOOD PARTY</string>
     <string name="Bollywood_party_content">A Bollywood party mimics the costumes worn by Bollywood actors and actresses. This party is typically filled with bright colors and exotic fabrics.</string>
     <string name="Bollywood_party_timings">Timings: 10:00 PM</string>
-    <string name="Bollywood_party_venue">Venue: Bamboo Lawns</string>
+    <string name="Bollywood_Party_Upper_Venue">Venue: Bamboo Lawns </string>
+    <string name="Bollywood_party_venue">Venue: <a href="">Bamboo Lawns</a></string>
 </resources>

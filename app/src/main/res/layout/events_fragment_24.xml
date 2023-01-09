@@ -132,7 +132,7 @@
                     app:layout_constraintStart_toEndOf="@+id/lunch24VenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/lunch24Constraint"
                     android:textSize="12sp"
-                    android:text="@string/Lunch_24_venue"
+                    android:text="@string/Lunch_24_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp"
 
@@ -360,7 +360,7 @@
                     app:layout_constraintStart_toEndOf="@+id/baaleVenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/baaleConstraint"
                     android:textSize="12sp"
-                    android:text="@string/Baale_Shastra_Venue"
+                    android:text="@string/Baale_Shastra_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp" />
 
@@ -585,7 +585,7 @@
                     app:layout_constraintStart_toEndOf="@+id/mehendiVenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/mehendiConstraint"
                     android:textSize="12sp"
-                    android:text="@string/Lunch_24_venue"
+                    android:text="@string/Mehendi_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp"
                     />
@@ -813,7 +813,7 @@
                     app:layout_constraintStart_toEndOf="@+id/maayraVenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/maayraConstraint"
                     android:textSize="12sp"
-                    android:text="@string/Maayra_venue"
+                    android:text="@string/Maayra_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp" />
 
@@ -1055,7 +1055,7 @@
                     app:layout_constraintStart_toEndOf="@+id/snacks24VenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/snacks24Constraint"
                     android:textSize="12sp"
-                    android:text="@string/Snacks_24_venue"
+                    android:text="@string/Snacks24_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp" />
 
@@ -1268,7 +1268,7 @@
                     app:layout_constraintStart_toEndOf="@+id/sangeetVenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/sangeetConstraint"
                     android:textSize="12sp"
-                    android:text="@string/Sangeet_venue"
+                    android:text="@string/Sangeet_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp" />
 
@@ -1495,7 +1495,7 @@
                     app:layout_constraintStart_toEndOf="@+id/dinner24VenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/dinner24Constraint"
                     android:textSize="12sp"
-                    android:text="@string/Dinner_24_venue"
+                    android:text="@string/Dinner24_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp"
                     />
@@ -1723,7 +1723,7 @@
                     app:layout_constraintStart_toEndOf="@+id/bollywoodPartyVenueGuideline"
                     app:layout_constraintBottom_toBottomOf="@id/bollywoodPartyConstraint"
                     android:textSize="12sp"
-                    android:text="@string/Bollywood_party_venue"
+                    android:text="@string/Bollywood_Party_Upper_Venue"
                     android:textColor="#838383"
                     android:layout_marginBottom="8dp"
                     />
