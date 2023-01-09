@@ -286,6 +286,34 @@ class MainActivity : AppCompatActivity() {
                  addToBackStack("dress")
              }
          }
+
+         R.id.haldiDressCode -> {
+             val bundle = bundleOf("id" to R.id.haldi)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
+         R.id.baaratDressCode -> {
+             val bundle = bundleOf("id" to R.id.baarat)
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
+         R.id.phereDressCode -> {
+             val bundle = bundleOf("id" to R.id.baarat) //baarat phere same dress code
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
      }
  }
 
