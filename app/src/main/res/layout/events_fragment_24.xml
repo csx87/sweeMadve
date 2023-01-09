@@ -208,6 +208,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Menu_Click_Here"
+                    android:onClick="menuClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -434,6 +435,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
+                    android:onClick="dressCodeClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -660,6 +662,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
+                    android:onClick="dressCodeClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -887,6 +890,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
+                    android:onClick="dressCodeClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -1115,6 +1119,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Menu_Click_Here"
+                    android:onClick="menuClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -1342,6 +1347,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
+                    android:onClick="dressCodeClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -1570,6 +1576,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Menu_Click_Here"
+                    android:onClick="menuClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
@@ -1798,6 +1805,7 @@
                     android:textColor="#838383"
                     android:textSize="14sp"
                     android:text="@string/Dress_Click_Here"
+                    android:onClick="dressCodeClickEvent"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView

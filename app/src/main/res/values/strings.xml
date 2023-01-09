@@ -38,12 +38,13 @@
     <string name="bollywoodNight">BollyWood Night</string>
 
     <!-- ..............................................................................For Events Page..................................................................................... !-->
-    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 24 !-->
-    <!-- Lunch 24 -->
-    <!-- Dhiru Commit !-->
+
     <string name="Menu_Click_Here">Menu: <a href="">Click_Here</a></string>
     <string name="Dress_Click_Here">Dress Code: <a href="">Click_Here</a></string>
 
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 24 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, !-->
+
+    <!-- Lunch 24 -->
     <string name="Lunch_24_Header">LUNCH</string>
     <string name="Lunch_24_Contents">"Come eat"</string>
     <string name="Lunch_24_timings">Timings: 12:30 PM</string>
@@ -98,4 +99,70 @@
     <string name="Bollywood_party_timings">Timings: 10:00 PM</string>
     <string name="Bollywood_Party_Upper_Venue">Venue: Bamboo Lawns </string>
     <string name="Bollywood_party_venue">Venue: <a href="">Bamboo Lawns</a></string>
+
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 24 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, !-->
+
+
+
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 25 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, !-->
+
+    <!-- Breakfast 25 -->
+    <string name="Breakfast_25_Header">BREAKFAST</string>
+    <string name="Breakfast_25_Contents">"Come eat"</string>
+    <string name="Breakfast_25_timings">Timings: 12:30 PM</string>
+    <string name="Breakfast_25_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Breakfast_25_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+    <!--  Haldi  -->
+    <string name="Haldi_Header">HALDI</string>
+    <string name="Haldi_Contents">"Come eat"</string>
+    <string name="Haldi_timings">Timings: 12:30 PM</string>
+    <string name="Haldi_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Haldi_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+
+    <!--  Lunch 25  -->
+    <string name="Lunch_25_Header">LUNCH</string>
+    <string name="Lunch_25_Contents">"Come eat"</string>
+    <string name="Lunch_25_timings">Timings: 12:30 PM</string>
+    <string name="Lunch_25_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Lunch_25_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+    <string name="Baarat_Header">BAARAT</string>
+    <string name="Baarat_Contents">"Come eat"</string>
+    <string name="Baarat_timings">Timings: 12:30 PM</string>
+    <string name="Baarat_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Baarat_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+    <string name="Snacks_25_Header">SNACKS</string>
+    <string name="Snacks_25_Contents">"Come eat"</string>
+    <string name="Snacks_25_timings">Timings: 12:30 PM</string>
+    <string name="Snacks_25_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Snacks_25_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+    <string name="Phere_Header">PHERE</string>
+    <string name="Phere_Contents">"Come eat"</string>
+    <string name="Phere_timings">Timings: 12:30 PM</string>
+    <string name="Phere_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Phere_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+    <string name="Dinner_25_Header">DINNER</string>
+    <string name="Dinner_25_Contents">"Come eat"</string>
+    <string name="Dinner_25_timings">Timings: 12:30 PM</string>
+    <string name="Dinner_25_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Dinner_25_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+
+
+
+
+
+
+
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 25 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, !-->
+
+
+
+
+
 </resources>
