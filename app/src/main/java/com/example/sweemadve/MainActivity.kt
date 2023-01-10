@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
@@ -26,6 +27,7 @@ lateinit var bottomNavigationView: NavigationBarView
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var savedFragment: Fragment.SavedState;
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -134,7 +136,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if(!supportFragmentManager.popBackStackImmediate())
+        if(supportFragmentManager.backStackEntryCount == 1){
+           //val currentFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)
+            supportFragmentManager.popBackStackImmediate()
+            Log.i("Fragment","Two enetires")
+        }
+        else
         {
         printStack()
         if(stack.size > 0){
@@ -241,8 +248,10 @@ class MainActivity : AppCompatActivity() {
 
     //event_page_dress_code_redirection
  fun dressCodeClickEvent(v: View){
+     val currentFragment:EventsFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as EventsFragment
      when(v.id){
          R.id.baaleDressCode -> {
+             currentFragment.savedText = "24 Jan"
              val bundle = bundleOf("id" to R.id.baaleShastra)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -252,6 +261,7 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.maayraDressCode -> {
+             currentFragment.savedText = "24 Jan"
              val bundle = bundleOf("id" to R.id.maayra)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -261,6 +271,7 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.mehendiDressCode -> {
+             currentFragment.savedText = "24 Jan"
              val bundle = bundleOf("id" to R.id.mehendi)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -270,6 +281,7 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.sangeetDressCode -> {
+             currentFragment.savedText = "24 Jan"
              val bundle = bundleOf("id" to R.id.sangeet)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -279,6 +291,7 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.bollywoodPartyDressCode -> {
+             currentFragment.savedText = "24 Jan"
              val bundle = bundleOf("id" to R.id.bollywoodParty)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -288,6 +301,7 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.haldiDressCode -> {
+             currentFragment.savedText = "25 Jan"
              val bundle = bundleOf("id" to R.id.haldi)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -297,6 +311,7 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.baaratDressCode -> {
+             currentFragment.savedText = "25 Jan"
              val bundle = bundleOf("id" to R.id.baarat)
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
@@ -306,7 +321,18 @@ class MainActivity : AppCompatActivity() {
          }
 
          R.id.phereDressCode -> {
+             currentFragment.savedText = "25 Jan"
              val bundle = bundleOf("id" to R.id.baarat) //baarat phere same dress code
+             supportFragmentManager.commit {
+                 replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
+                 setReorderingAllowed(true)
+                 addToBackStack("dress")
+             }
+         }
+
+         R.id.dhaareDressCode -> {
+             currentFragment.savedText = "26 Jan"
+             val bundle = bundleOf("id" to R.id.dhaare) //baarat phere same dress code
              supportFragmentManager.commit {
                  replace<CardDressFragment>(R.id.fragmentContainerView, args = bundle )
                  setReorderingAllowed(true)

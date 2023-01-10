@@ -152,17 +152,26 @@
     <string name="Dinner_25_Upper_Venue">Venue: Pavilion Hall</string>
     <string name="Dinner_25_venue">Venue: <a href="">Pavilion Hall</a></string>
 
-
-
-
-
-
-
-
     <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 25 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, !-->
 
 
+    <string name="Breakfast_26_Header">BREAKFAST</string>
+    <string name="Breakfast_26_Contents">"Come eat"</string>
+    <string name="Breakfast_26_timings">Timings: 12:30 PM</string>
+    <string name="Breakfast_26_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Breakfast_26_venue">Venue: <a href="">Pavilion Hall</a></string>
 
+    <string name="Dhaare_Header">DHAARE</string>
+    <string name="Dhaare_Contents">"Come eat"</string>
+    <string name="Dhaare_timings">Timings: 12:30 PM</string>
+    <string name="Dhaare_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Dhaare_venue">Venue: <a href="">Pavilion Hall</a></string>
+
+    <string name="Lunch_26_Header">LUNCH</string>
+    <string name="Lunch_26_Contents">"Come eat"</string>
+    <string name="Lunch_26_timings">Timings: 12:30 PM</string>
+    <string name="Lunch_26_Upper_Venue">Venue: Pavilion Hall</string>
+    <string name="Lunch_26_venue">Venue: <a href="">Pavilion Hall</a></string>
 
 
 </resources>
