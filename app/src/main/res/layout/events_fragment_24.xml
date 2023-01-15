@@ -854,7 +854,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    app:srcCompat="@drawable/maayra"
+                    app:srcCompat="@drawable/maayra_dress"
                     />
 
                 <View
