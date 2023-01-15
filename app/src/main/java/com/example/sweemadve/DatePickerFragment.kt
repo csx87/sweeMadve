@@ -2,14 +2,17 @@ package com.example.sweemadve
 
 import android.app.DatePickerDialog
 import android.app.Dialog
+import android.app.usage.UsageEvents.Event.NONE
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.DatePicker
 import android.widget.TextView
 import androidx.core.view.get
 import androidx.fragment.app.DialogFragment
 import com.example.sweemadve.databinding.FoodFragmentBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 import java.util.*
 
 
@@ -58,6 +61,7 @@ class DatePickerFragment: DialogFragment(), DatePickerDialog.OnDateSetListener{
         val foodText = activity?.findViewById<TextView>(R.id.foodText)
         val foodNav = activity?.findViewById<BottomNavigationView>(R.id.foodNavigationView)
 
+
         val date = p3.toString()
         val month = intToMonth(p2)
         p0?.updateDate(p1,p2,p3)
@@ -65,41 +69,67 @@ class DatePickerFragment: DialogFragment(), DatePickerDialog.OnDateSetListener{
         dateText?.text = date.plus(" ").plus(month)
 
         when(foodNav?.selectedItemId){
-            R.id.breakfast -> handleFoodMenuDisplay(dateText,foodText,"Breakfast")
-            R.id.lunch -> handleFoodMenuDisplay(dateText,foodText,"Lunch")
-            R.id.snacks -> handleFoodMenuDisplay(dateText,foodText,"Snacks")
-            R.id.dinner -> handleFoodMenuDisplay(dateText,foodText,"Dinner")
+            R.id.breakfast -> handleFoodMenuDisplay(dateText,foodText,"Breakfast",foodNav)
+            R.id.lunch -> handleFoodMenuDisplay(dateText,foodText,"Lunch",foodNav)
+            R.id.snacks -> handleFoodMenuDisplay(dateText,foodText,"Snacks",foodNav)
+            R.id.dinner -> handleFoodMenuDisplay(dateText,foodText,"Dinner",foodNav)
         }
     }
 
-    private fun handleFoodMenuDisplay(dateText: TextView?,foodText: TextView?, type: String?) {
+    private fun handleFoodMenuDisplay(dateText: TextView?,foodText: TextView?, type: String?,foodNav: BottomNavigationView) {
+        val breakfast = foodNav.menu.findItem(R.id.breakfast)
+        val lunch = foodNav.menu.findItem(R.id.lunch)
+        val snacks = foodNav.menu.findItem(R.id.snacks)
+        val dinner = foodNav.menu.findItem(R.id.dinner)
         if (dateText?.text as String == "24 Jan") {
+            breakfast.isVisible = false
+            lunch.isVisible = true
+            snacks.isVisible = true
+            dinner.isVisible = true
+           // lunch.isChecked = true
             when (type) {
-                "Breakfast" -> foodText?.text = getString(R.string.Breakfast_24)
                 "Lunch" -> foodText?.text = getString(R.string.Lunch_24)
                 "Snacks" -> foodText?.text = getString(R.string.Snacks_24)
                 "Dinner" -> foodText?.text = getString(R.string.Dinner_24)
-                else -> foodText?.text = "Invalid_Date"
+                else -> {
+                    lunch.isChecked = true
+                    foodText?.text = getString(R.string.Lunch_24)
+                }
             }
         }
 
         if (dateText.text as String == "25 Jan") {
+            breakfast.isVisible = true
+            lunch.isVisible = true
+            snacks.isVisible = true
+            dinner.isVisible = true
+            //breakfast.isChecked = true
             when (type) {
                 "Breakfast" -> foodText?.text = getString(R.string.Breakfast_25)
                 "Lunch" -> foodText?.text = getString(R.string.Lunch_25)
                 "Snacks" -> foodText?.text = getString(R.string.Snacks_25)
                 "Dinner" -> foodText?.text = getString(R.string.Dinner_25)
-                else -> foodText?.text = "Invalid_Date"
+                else ->  {
+                    breakfast.isChecked = true
+                    foodText?.text = getString(R.string.Breakfast_25)
+                }
             }
         }
 
         if(dateText.text as String == "26 Jan"){
+            breakfast.isVisible = true
+            lunch.isVisible = true
+            snacks.isVisible = false
+            dinner.isVisible = false
+            //breakfast.isChecked = true
             when(type){
                 "Breakfast" -> foodText?.text = getString(R.string.Breakfast_26)
                 "Lunch" -> foodText?.text = getString(R.string.Lunch_26)
-                "Snacks" -> foodText?.text = getString(R.string.Snacks_26)
-                "Dinner" -> foodText?.text = getString(R.string.Dinner_26)
-                else -> foodText?.text = "Invalid_Date"
+
+                else -> {
+                    breakfast.isChecked = true
+                    foodText?.text = getString(R.string.Breakfast_26)
+                }
             }
         }
     }

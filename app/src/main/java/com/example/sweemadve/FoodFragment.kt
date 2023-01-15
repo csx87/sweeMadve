@@ -19,7 +19,9 @@ class FoodFragment: Fragment(R.layout.food_fragment) {
     ): View? {
         binding = FoodFragmentBinding.inflate(layoutInflater)
         binding.dateText.text = "24 Jan"
-        binding.foodText.text = getString(R.string.Breakfast_24)
+        binding.foodText.text = getString(R.string.Lunch_24)
+        binding.foodNavigationView.menu.findItem(R.id.breakfast).isVisible = false
+        binding.foodNavigationView.menu.findItem(R.id.lunch).isChecked = true
         //binding.dateText.doAfterTextChanged { handleFoodMenuDisplay(binding,type = "Breakfast")  }
         binding.foodNavigationView.setOnItemSelectedListener{ item ->
             when(item.itemId){
@@ -55,6 +57,7 @@ class FoodFragment: Fragment(R.layout.food_fragment) {
                 "Snacks" -> binding.foodText.text = getString(R.string.Snacks_24)
                 "Dinner" -> binding.foodText.text = getString(R.string.Dinner_24)
                 else -> binding.foodText.text = "Invalid_Date"
+
             }
         }
 
