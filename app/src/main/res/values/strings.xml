@@ -174,4 +174,50 @@
     <string name="Lunch_26_venue">Venue: <a href="">Pavilion Hall</a></string>
 
 
+    <!-- Dress Code!-->
+    <string name="maayraMenContents">Men, pick a white kurta pajama with bandhani or leheriya dupatta</string>
+    <string name="maayraWomenContents">Rajasthani attire with bore and nath</string>
+
+    <string name="baaleShastraMenContents">Hues of Pastels/Florals</string>
+    <string name="baaleShastraWomenContents">Hues of Pastels/Florals</string>
+    <string name="baaleShastraTimings">24 Jan 2:00 pm</string>
+    <string name="baaleShastraSlogan">Eezy Breezy</string>
+    <string name="baaleShastraSide">"Bride's Side"</string>
+
+    <string name="mehendiMenContents">Hues of Pastels/Florals.Green would be a good choice</string>
+    <string name="mehendiWomenContents">Hues of Pastels/Florals.Green would be a good choice</string>
+    <string name="mehendiTimings">24 Jan 2:00 pm</string>
+    <string name="mehendiSlogan">Eezy Breezy</string>
+    <string name="mehendiSide">"Common"</string>
+
+    <string name="sangeetMenContents">Pick any ethnic dress you like</string>
+    <string name="sangeetWomenContents">Pick any ethnic dress you like</string>
+    <string name="sangeetTimings">24 Jan 6:00 pm</string>
+    <string name="sangeetSlogan">Get Your Bling On</string>
+    <string name="sangeetSide">"Groom's Side"</string>
+
+    <string name="haldiMenContents">Dress up the way you want but yellow is your color</string>
+    <string name="haldiWomenContents">Dress up the way you want but yellow is your color</string>
+    <string name="haldiTimings">25 Jan 9:00 am</string>
+    <string name="haldiSlogan">Yellow Theme</string>
+    <string name="haldiSide">"Common"</string>
+
+    <string name="baaratMenContents">Channel your inner Shah Rukh Khan from K3G by wearing Sherwani</string>
+    <string name="baaratWomenContents">Channel your inner Kajol from K3G by wearing Lehenga</string>
+    <string name="baaratTimings">25 Jan 5:30 pm</string>
+    <string name="baaratSlogan">Traditional Theme</string>
+    <string name="baaratSide">"Groom's Side"</string>
+
+    <string name="dhaareMenContents">Drape yourself with Lungi and a Shirt, add Shalya and Goggles to complement</string>
+    <string name="dhaareWomenContents">Drape yourself with Silk Saree and deck yourself with temple jewellery</string>
+    <string name="dhaareTimings">25 Jan 5:30 pm</string>
+    <string name="dhaareSlogan">Carnatic Theme</string>
+    <string name="dhaareSide">"Bride's Side"</string>
+
+    <string name="bollywoodNightMenContents">Show your creativity by mimicking some famous Bollywood attire</string>
+    <string name="bollywoodNightWomenContents">Show your creativity by mimicking some famous Bollywood attire</string>
+    <string name="bollywoodNightTimings">24 Jan 10:00 pm</string>
+    <string name="bollywoodNightSlogan">Bollywood Theme</string>
+    <string name="bollywoodNightSide">"Common"</string>
+
 </resources>

@@ -136,12 +136,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if(supportFragmentManager.backStackEntryCount == 1){
-           //val currentFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)
-            supportFragmentManager.popBackStackImmediate()
-            Log.i("Fragment","Two enetires")
-        }
-        else
+        if(!supportFragmentManager.popBackStackImmediate())
         {
         printStack()
         if(stack.size > 0){
