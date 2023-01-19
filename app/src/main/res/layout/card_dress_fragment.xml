@@ -111,8 +111,15 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/random"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="Random"/>
+
+    <TextView
         android:id="@+id/cardDressTimings"
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="24 Jan 3:00 pm"

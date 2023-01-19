@@ -30,36 +30,79 @@ class CardDressFragment: Fragment(R.layout.card_dress_fragment) {
         
         when(id){
             R.id.maayra -> {
-                binding.cardFragmentText.text = getString(R.string.maayra)
 
             }
 
             R.id.baaleShastra -> {
-                binding.cardFragmentText.text = getString(R.string.baaleShastra)
+                binding.cardDressHeading.text ="Bale Shastra"
+                binding.cardDressMenContents.text = getString(R.string.baaleShastraMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.baaleShastraWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.baale_men)
+                binding.cardDressWomenImage.setImageResource(R.drawable.baale_women)
+                binding.cardDressTimings.text = getString(R.string.baaleShastraTimings)
+                binding.cardDressSlogan.text = getString(R.string.baaleShastraSlogan)
             }
 
             R.id.mehendi -> {
-                binding.cardFragmentText.text = getString(R.string.mehendi)
+                binding.cardDressHeading.text ="Mehendi"
+                binding.cardDressMenContents.text = getString(R.string.mehendiMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.mehendiWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.mehendi_men)
+                binding.cardDressWomenImage.setImageResource(R.drawable.mehendi_women)
+                binding.cardDressTimings.text = getString(R.string.mehendiTimings)
+                binding.cardDressSlogan.text = getString(R.string.mehendiSlogan)
             }
 
             R.id.sangeet -> {
-                binding.cardFragmentText.text = getString(R.string.sangeet)
+                binding.cardDressHeading.text ="Sangeet"
+                binding.cardDressMenContents.text = getString(R.string.sangeetMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.sangeetWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.sangeet_men)
+                binding.cardDressWomenImage.setImageResource(R.drawable.sangeet_women)
+                binding.cardDressTimings.text = getString(R.string.sangeetTimings)
+                binding.cardDressSlogan.text = getString(R.string.sangeetSlogan)
             }
 
             R.id.haldi -> {
-                binding.cardFragmentText.text = getString(R.string.haldi)
+                binding.cardDressHeading.text ="Haldi"
+                binding.cardDressMenContents.text = getString(R.string.haldiMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.haldiWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.haldi_men)
+                binding.cardDressWomenImage.setImageResource(R.drawable.haldi_women)
+                binding.cardDressTimings.text = getString(R.string.haldiTimings)
+                binding.cardDressSlogan.text = getString(R.string.haldiSlogan)
             }
 
             R.id.baarat -> {
-                binding.cardFragmentText.text = getString(R.string.baarat)
+                binding.cardDressHeading.text ="Baara"
+                binding.cardDressMenContents.text = getString(R.string.baaratMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.baaratWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.baarat_men)
+                binding.cardDressWomenImage.setImageResource(R.drawable.baarat_women)
+                binding.cardDressTimings.text = getString(R.string.baaratTimings)
+                binding.cardDressSlogan.text = getString(R.string.baaratSlogan)
             }
 
             R.id.dhaare -> {
-                binding.cardFragmentText.text = getString(R.string.dhaare)
+                binding.cardDressHeading.text ="Dhaare"
+                binding.cardDressMenContents.text = getString(R.string.dhaareMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.dhaareWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.dhaare_men)
+                binding.cardDressWomenImage.setImageResource(R.drawable.dhaare_women)
+                binding.cardDressTimings.text = getString(R.string.dhaareTimings)
+                binding.cardDressSlogan.text = getString(R.string.dhaareSlogan)
+                binding.random.textSize = 10F
             }
 
-            R.id.bollywoodNight -> {
-                binding.cardFragmentText.text = getString(R.string.bollywoodNight)
+            R.id.bollywoodParty -> {
+                binding.cardDressHeading.text ="Dhaare"
+                binding.cardDressMenContents.text = getString(R.string.bollywoodNightMenContents)
+                binding.cardDressWomenContents.text = getString(R.string.bollywoodNightWomenContents)
+                binding.cardDressMenImage.setImageResource(R.drawable.bollywoodnight_men2)
+                binding.cardDressWomenImage.setImageResource(R.drawable.bollywoodnight_women2)
+                binding.cardDressTimings.text = getString(R.string.bollywoodNightTimings)
+                binding.cardDressSlogan.text = getString(R.string.bollywoodNightSlogan)
+                binding.random.textSize = 10F
             }
             else -> Log.i("card","Invalid Option") //Toast
 
