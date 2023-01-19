@@ -172,7 +172,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    app:srcCompat="@drawable/lunch"
+                    app:srcCompat="@drawable/breakfast"
                     />
 
                 <View
@@ -402,7 +402,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    app:srcCompat="@drawable/lunch"
+                    app:srcCompat="@drawable/daare"
                     />
 
                 <View
