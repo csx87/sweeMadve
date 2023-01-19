@@ -74,7 +74,7 @@ class CardDressFragment: Fragment(R.layout.card_dress_fragment) {
             }
 
             R.id.baarat -> {
-                binding.cardDressHeading.text ="Baara"
+                binding.cardDressHeading.text ="Baarat"
                 binding.cardDressMenContents.text = getString(R.string.baaratMenContents)
                 binding.cardDressWomenContents.text = getString(R.string.baaratWomenContents)
                 binding.cardDressMenImage.setImageResource(R.drawable.baarat_men)

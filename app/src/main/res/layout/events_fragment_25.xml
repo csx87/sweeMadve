@@ -151,12 +151,15 @@
 
                 <TextView
                     android:id="@+id/breakfast25Contents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/Breakfast_25_Contents"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/Lunch_25_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
+                    android:gravity="left"
                     app:layout_constraintBottom_toBottomOf="@id/breakfast25BottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/breakfast25MidGuideline"
                     app:layout_constraintStart_toStartOf="@id/breakfast25Guideline1"
@@ -174,6 +177,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/breakfast"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -381,13 +385,16 @@
 
                 <TextView
                     android:id="@+id/haldiContents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Haldi_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/haldiBottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/haldiBottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/haldiMidGuideline"
                     app:layout_constraintStart_toStartOf="@id/haldiGuideline1"
                     app:layout_constraintTop_toBottomOf="@id/haldiUpperLine"
@@ -404,6 +411,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/haldi"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -611,13 +619,16 @@
 
                 <TextView
                     android:id="@+id/lunch_25_Contents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Lunch_25_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/lunch_25_BottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/lunch_25_BottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/lunch_25_MidGuideline"
                     app:layout_constraintStart_toStartOf="@id/lunch_25_Guideline1"
                     app:layout_constraintTop_toBottomOf="@id/lunch_25_UpperLine"
@@ -634,6 +645,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/lunch"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -841,13 +853,16 @@
 
                 <TextView
                     android:id="@+id/baaratContents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Baarat_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/baaratBottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/baaratBottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/baaratMidGuideline"
                     app:layout_constraintStart_toStartOf="@id/baaratGuideline1"
                     app:layout_constraintTop_toBottomOf="@id/baaratUpperLine"
@@ -864,6 +879,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/baraat"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -1071,12 +1087,15 @@
 
                 <TextView
                     android:id="@+id/snacks_25_Contents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Snacks_25_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
+                    android:gravity="left"
                     app:layout_constraintBottom_toBottomOf="@id/snacks_25_BottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/snacks_25_MidGuideline"
                     app:layout_constraintStart_toStartOf="@id/snacks_25_Guideline1"
@@ -1094,6 +1113,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/snacks"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -1301,13 +1321,16 @@
 
                 <TextView
                     android:id="@+id/phereContents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Phere_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/phereBottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/phereBottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/phereMidGuideline"
                     app:layout_constraintStart_toStartOf="@id/phereGuideline1"
                     app:layout_constraintTop_toBottomOf="@id/phereUpperLine"
@@ -1324,6 +1347,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/phere"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -1532,13 +1556,16 @@
 
                 <TextView
                     android:id="@+id/dinner_25_Contents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Dinner_25_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/dinner_25_BottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/dinner_25_BottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/dinner_25_MidGuideline"
                     app:layout_constraintStart_toStartOf="@id/dinner_25_Guideline1"
                     app:layout_constraintTop_toBottomOf="@id/dinner_25_UpperLine"
@@ -1555,6 +1582,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/lunch"
+                    android:scaleType="centerCrop"
                     />
 
                 <View

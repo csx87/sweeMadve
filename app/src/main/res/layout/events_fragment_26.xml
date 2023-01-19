@@ -150,13 +150,16 @@
 
                 <TextView
                     android:id="@+id/breakfast26Contents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/Breakfast_26_Contents"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/Lunch_25_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/breakfast26BottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/breakfast26BottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/breakfast26MidGuideline"
                     app:layout_constraintStart_toStartOf="@id/breakfast26Guideline1"
                     app:layout_constraintTop_toBottomOf="@id/breakfast26UpperLine"
@@ -173,6 +176,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/breakfast"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -184,6 +188,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/breakfast26Guideline2"
                     app:layout_constraintStart_toStartOf="@+id/breakfast26Guideline1"
                     app:layout_constraintTop_toBottomOf="@+id/breakfast26Image"/>
+                
 
                 <TextView
                     android:id="@+id/breakfast26Timings"
@@ -380,13 +385,16 @@
 
                 <TextView
                     android:id="@+id/dhaareContents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Dhaare_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/dhaareBottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/dhaareBottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/dhaareMidGuideline"
                     app:layout_constraintStart_toStartOf="@id/dhaareGuideline1"
                     app:layout_constraintTop_toBottomOf="@id/dhaareUpperLine"
@@ -403,6 +411,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/daare"
+                    android:scaleType="centerCrop"
                     />
 
                 <View
@@ -611,13 +620,16 @@
 
                 <TextView
                     android:id="@+id/lunch26Contents"
-                    android:layout_width="238dp"
-                    android:layout_height="118dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="5dp"
                     android:text="@string/Lunch_26_Contents"
                     android:textColor="#838383"
                     android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@id/lunch26BottomLine"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toTopOf="@id/lunch26BottomLine"
                     app:layout_constraintEnd_toStartOf="@+id/lunch26MidGuideline"
                     app:layout_constraintStart_toStartOf="@id/lunch26Guideline1"
                     app:layout_constraintTop_toBottomOf="@id/lunch26UpperLine"
@@ -634,6 +646,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/lunch"
+
                     />
 
                 <View
