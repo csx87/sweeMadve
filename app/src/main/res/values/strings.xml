@@ -138,7 +138,7 @@
     <string name="Snacks_25_Contents">"Come eat"</string>
     <string name="Snacks_25_timings">Timings: 5:00 PM</string>
     <string name="Snacks_25_Upper_Venue">Venue: Baraat Swaagat</string>
-    <string name="Snacks_25_venue">Venue: <a href="">Baraat Swaagat</a></string>
+    <string name="Snacks_25_venue">Venue: Baraat Swaagat></string>
 
     <string name="Phere_Header">PHERE</string>
     <string name="Phere_Contents">"This significant ceremony marks the ultimate union of a bride and groom and proclaims them as husband and wife. it is not just taking seven rounds around a sacred fire that binds them in the matrimonial bond but also the promises that they make to each other while doing these circumambulations"</string>
@@ -222,4 +222,21 @@
     <string name="bollywoodNightSlogan">Bollywood Theme</string>
     <string name="bollywoodNightSide">"Common"</string>
 
+    <string name="fountain_area">1) Bale Shastra\n2) Mehendi</string>
+    <string name="bamboo_lawn">1) Sangeet\n2)Dinner(24 Jan)\n3) Saat Phere</string>
+    <string name="main_entrance">Baarat</string>
+    <string name="pavilion_area">1)Maayra\n2) Lunch(24,25 Jan)\n3) Snacks(24 Jan)\n4) Breakfast(25 Jan)\n5)Dinner(25 Jan)</string>
+    <string name="pool_area">Haldi</string>
+    <string name="dining_hall">Lunch(26 Jan)</string>
+    <string name="banquet_hall">Dhaare</string>
+
+    <string-array name="maps">
+        <item>Fountain Area</item>
+        <item>Bamboo Lawn</item>
+        <item>Main Entrance</item>
+        <item>Pavilion Area</item>
+        <item>Pool Area</item>
+        <item>Dining Hall</item>
+        <item>Banquet Hall</item>
+    </string-array>
 </resources>

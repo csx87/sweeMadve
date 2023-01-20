@@ -6,32 +6,135 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="68dp"
+            android:onClick="customTab360"
+            android:text="Check 360 View"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Miraya"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:translationZ="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Celebrate Love,Life,Laughter"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:translationZ="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maayra_top_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+      />
+
+    <HorizontalScrollView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mapImage1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fountain_area1" />
+
+            <ImageView
+                android:id="@+id/mapImage2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fountain_area2" />
+
+            <ImageView
+                android:id="@+id/mapImage3"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/mapImage4"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="10sp"
+        android:text="Swipe to see other photos"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Miraya Greens Map"
-        android:gravity="center"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="366dp"
-        android:src="@drawable/map1" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="360_View"
-        android:onClick="customTab360">
-    </Button>
+        android:layout_marginTop="5dp"
+        android:text="Events Taking Place:"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
 
     <TextView
+        android:id="@+id/mapsContents"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scroll Down for more info"
-        android:gravity="center"/>
-
+        android:layout_marginTop="5dp"
+        android:text="@string/fountain_area"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
 </LinearLayout>
 </layout>

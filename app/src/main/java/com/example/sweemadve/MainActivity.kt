@@ -85,8 +85,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.maps -> {
 
                     //manageBackStack()
+                    val random: String = "random"
+                    val bundle = bundleOf("v" to null)
                     supportFragmentManager.commit {
-                        replace<MapsFragment>(R.id.fragmentContainerView)
+                        replace<MapsFragment>(R.id.fragmentContainerView,args = bundle)
                         setReorderingAllowed(true)
                         //addToBackStack("maps") // name can be null
 
@@ -210,6 +212,7 @@ class MainActivity : AppCompatActivity() {
         newFragment.show(supportFragmentManager, "datePicker")
     }
 
+    //Dress_Code_click
      fun exampleClick(v :View){
          val bundle = bundleOf("id" to v.id)
         supportFragmentManager.commit {
@@ -218,6 +221,30 @@ class MainActivity : AppCompatActivity() {
             addToBackStack("dress")
         }
          //handleCardText(v)
+    }
+
+    fun venueClickEvent(v : View){
+        val currentFragment:EventsFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as EventsFragment
+        val text = findViewById<TextView>(R.id.eventsDateText).text as String
+        Log.i("text",text)
+        when(text){
+            "25 Jan" -> currentFragment.savedText = "25 Jan"
+        }
+        val textView: TextView = findViewById<TextView>(v.id)
+        bottomNavigationView.selectedItemId = R.id.maps
+
+        //val string : String = textView.text as String
+        var string : String? =null
+        string = handleSelectedVenue(textView.text)
+        val bundle = bundleOf("v" to string)
+        supportFragmentManager.commit {
+            replace<MapsFragment>(R.id.fragmentContainerView, args = bundle )
+            setReorderingAllowed(true)
+        }
+        manageStack("M")
+
+
+
     }
 
     fun customTab360(v: View){
@@ -337,6 +364,20 @@ class MainActivity : AppCompatActivity() {
 
      }
  }
+
+    private fun handleSelectedVenue(text: CharSequence?):String?{
+        if(text!=null){
+            val str1: String = text.toString()
+            if(str1.contains("Pav".toString())) return "Pav"
+            else if(str1.contains("Fou".toString())) return "Fou"
+            else if(str1.contains("Bam".toString())) return "Bam"
+            else if(str1.contains("Poo".toString())) return "Poo"
+            else if(str1.contains("Mai".toString())) return "Mai"
+            else if(str1.contains("Din".toString())) return "Din"
+            else if(str1.contains("BAn".toString())) return "Ban"
+        }
+        return null
+    }
 
 
 
